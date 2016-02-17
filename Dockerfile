@@ -21,7 +21,7 @@ RUN wget http://files.drush.org/drush.phar
 RUN php drush.phar core-status
 RUN chmod +x drush.phar
 RUN sudo mv drush.phar /usr/local/bin/drush
-RUN drush init
+RUN drush init -y
 
 
 
