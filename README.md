@@ -8,4 +8,4 @@
 
 docker build -t YOUR-NAME/drupal-apache2:tag .
 
-docker run -ti --name YOUR-CONTAINER-NAME wazlo2004/drupal-apache2:20150216 /bin/bash
+docker run -ti --name YOUR-CONTAINER-NAME YOUR-NAME/drupal-apache2:tag /bin/bash
