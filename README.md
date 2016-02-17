@@ -2,7 +2,7 @@
 
 1.Download and go to Folder
 
-2.nano Dockerfil Write your MYSQLPASSWORD
+2.on Dockerfil Write your MYSQLPASSWORD
 
 3.build your docker image
 
