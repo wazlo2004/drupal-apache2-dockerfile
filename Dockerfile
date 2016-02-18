@@ -1,6 +1,6 @@
 FROM ubuntu:14.04
 
-MAINTAINER wazlo200444@gmail 
+MAINTAINER wazlo200444@gmail.com
 
 RUN apt-get update
 RUN apt-get upgrade -y 
