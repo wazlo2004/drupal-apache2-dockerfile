@@ -5,7 +5,7 @@ MAINTAINER wazlo200444@gmail.com
 RUN apt-get update
 RUN apt-get upgrade -y 
 
-# apache2 php5
+# apache2 php5.6
 RUN apt-get install apache2 -y
 RUN apt-get install php5 -y 
 RUN apt-get install php5-gd -y
@@ -13,7 +13,7 @@ RUN apt-get install libapache2-mod-auth-mysql -y
 RUN apt-get install php5-mysql -y
 RUN apt-get install php5-cli -y
 
-RUN apt-get install nano git -y
+RUN apt-get install nano git  wget -y
 RUN a2enmod rewrite
 
 # drush
@@ -42,4 +42,14 @@ ADD  1.sh  /
 EXPOSE 80
 
 
-
+##php up 5.6
+RUN  apt-get install software-properties-common python-software-properties  -y
+RUN  apt-get install software-properties-common
+RUN  locale-gen en_US.UTF-8
+RUN  export LANG=en_US.UTF-8
+RUN  export LANG=C.UTF-8
+RUN  add-apt-repository ppa:ondrej/php5-5.6
+RUN  sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys  4F4EA0AAE5267A6C
+RUN  apt-get update
+RUN  apt-get upgrade -y
+RUN  apt-get install php5 -y
