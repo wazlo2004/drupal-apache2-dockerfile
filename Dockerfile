@@ -5,7 +5,7 @@ MAINTAINER wazlo200444@gmail.com
 RUN apt-get update
 RUN apt-get upgrade -y 
 
-# apache2 php5.6
+# apache2 php
 RUN apt-get install apache2 -y
 RUN apt-get install php5 -y 
 RUN apt-get install php5-gd -y
@@ -53,3 +53,6 @@ RUN  sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys  4F4EA0AAE526
 RUN  apt-get update
 RUN  apt-get upgrade -y
 RUN  apt-get install php5 -y
+
+
+CMD ["bash"]
